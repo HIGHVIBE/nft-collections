@@ -1110,6 +1110,7 @@ contract COmastermind is ERC1155, EIP2981, Ownable  {
     uint256 public currentSupply = 0;
     uint256 public maxTotalSupply = 186;
     uint256 private noOfIds;
+    bool private canBurn;
 
     constructor(address _royaltyRecipient, uint256 _royaltyAmount) EIP2981(_royaltyRecipient, _royaltyAmount) 
         ERC1155("ipfs://QmV1ixC6m8k3e1kNX7RMfpBe9rrinVbvAK4XVguwwQ4BQy/") Ownable() {}
@@ -1167,9 +1168,12 @@ contract COmastermind is ERC1155, EIP2981, Ownable  {
         }
     }
 
-    function burn(uint256 id, uint256 amount) external onlyOwner{
+    function burn(uint256 id, uint256 amount) external{
         _burn(msg.sender, id, amount);
-        currentSupply -= amount;
+    }
+
+    function setCanBurn(bool state) external onlyOwner{
+        canBurn = state;
     }
 
 }
