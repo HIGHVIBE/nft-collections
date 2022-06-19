@@ -1108,7 +1108,7 @@ contract CosmicAssembly is ERC1155, EIP2981, Ownable  {
     string public name = "Cosmic Assembly";
     string public symbol = "COSMIC";
     uint256 public currentSupply = 0;
-    uint256 public maxTotalSupply = 186;
+    uint256 public maxTotalSupply = 177;
     uint256 private noOfIds;
     bool private canBurn;
 
