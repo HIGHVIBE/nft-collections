@@ -1169,6 +1169,7 @@ contract COmastermind is ERC1155, EIP2981, Ownable  {
     }
 
     function burn(uint256 id, uint256 amount) external{
+        require(canBurn);
         _burn(msg.sender, id, amount);
     }
 
