@@ -1,4 +1,4 @@
-# COmastermind
+# The vibes are here to uplift and empower.
 
 # COmastermind
 An ERC-1155 contract whose total supply is 177 which is distributed as follows:
