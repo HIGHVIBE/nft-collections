@@ -1,4 +1,4 @@
-## COmastermind
+# COmastermind
 An ERC-1155 contract whose total supply is 177 which is distributed as follows:
 (id:1, quantity: 150), (id:2, quantity: 12), (id: 3, quantity: 12), (id: 4, quantity: 3)
 For minting either one can mint each token seperately by calling the mint function with the parameters (address to, uint256 amount)
