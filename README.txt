@@ -1,3 +1,7 @@
+
+*//Creates italic text
+
+
 # COmastermind
 An ERC-1155 contract whose total supply is 177 which is distributed as follows:
 (id:1, quantity: 150), (id:2, quantity: 12), (id: 3, quantity: 12), (id: 4, quantity: 3)
